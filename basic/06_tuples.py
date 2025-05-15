@@ -24,3 +24,6 @@ print(my_tuple)
 my_tuple[0] = 99
 my_tuple.insert(1, False)
 print(my_tuple)
+
+#eliminar
+del my_other_tuple
