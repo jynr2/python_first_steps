@@ -26,4 +26,4 @@ my_tuple.insert(1, False)
 print(my_tuple)
 
 #eliminar
-del my_other_tuple
+del my_other_tuple # del no elemina elementos en una tupla, elemina la tupla
