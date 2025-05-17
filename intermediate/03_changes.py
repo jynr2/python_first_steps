@@ -76,3 +76,12 @@ def is_prime(number:int):
     return True
 
 is_prime(5)
+
+
+print('----- reverse -----')
+
+def reverse(text:str):
+    for i in range(len(text), 0, -1):
+        print(text[i-1], end='')
+
+reverse('hello world')
