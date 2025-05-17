@@ -1,6 +1,4 @@
-# Clase en vídeo: https://youtu.be/TbcEqkabAWU?t=15524
-
-### File Handling ###
+### file Handling ###
 
 import xml
 import csv
