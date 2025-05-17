@@ -50,4 +50,45 @@ my_sub = re.sub('[l|L]ección', 'clase', my_string)
 print(my_sub)
 
 
+print('----- patterns -----')
+# patrones propios
+# https://regex101.com
 
+pattern = r'[l|L]ección'
+print(re.findall(pattern, my_string))
+
+pattern = r'[l|L]ección|Expresiones'
+print(re.findall(pattern, my_string))
+
+pattern = r'[A-Z]'
+print(re.findall(pattern, my_string))
+
+pattern = r'[0-9]'
+print(re.findall(pattern, my_string))
+print(re.match(pattern, my_string))
+print(re.search(pattern, my_string))
+
+pattern = r'\d'
+print(re.findall(pattern, my_string))
+
+pattern = r'\D'
+print(re.findall(pattern, my_string))
+
+pattern = r'[l].'
+print(re.findall(pattern, my_string))
+
+pattern = r'[l].*'
+print(re.findall(pattern, my_string))
+
+# email validation regular expression
+pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+
+email = 'jyn@mail.com'
+print(re.match(pattern, email))
+print(re.search(pattern, email))
+print(re.findall(pattern, email))
+
+email = 'jyn@mail.e'
+print(re.match(pattern, email))
+print(re.search(pattern, email))
+print(re.findall(pattern, email))
